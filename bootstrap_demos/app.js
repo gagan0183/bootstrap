@@ -11,4 +11,10 @@ $(document).ready(function() {
     $('#myDropDown').on('hidden.bs.dropdown', function() {
         console.log('dropdown hidden');
     });
+    $('.alert').on('close.bs.alert', function() {
+        console.log('closing alert');
+    });
+    $('.alert').on('closed.bs.alert', function() {
+        console.log('close alert');
+    });
 });
