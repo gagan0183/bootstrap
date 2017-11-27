@@ -17,4 +17,7 @@ $(document).ready(function() {
     $('.alert').on('closed.bs.alert', function() {
         console.log('close alert');
     });
+    $('#myLoadingButton').click(function() {
+        $(this).button('loading');
+    })
 });
